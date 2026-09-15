@@ -1,0 +1,9 @@
+{
+  "name": "altered-design",
+  "description": "Choose visual directions with sourced image examples, recreate websites, build and improve UI, and verify usability and visual execution. Six modes including styles; offline reference gallery included.",
+  "version": "2.2.0",
+  "author": {
+    "name": "Kevin Kadosh"
+  },
+  "repository": "https://github.com/<owner>/alteredDesign"
+}

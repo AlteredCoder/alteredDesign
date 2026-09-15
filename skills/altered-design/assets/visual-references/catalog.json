@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-09",
+  "description": "Curated visual references; groupings are editorial interpretations, not an official taxonomy. Example dates vary. Visual inspiration does not certify usability or accessibility.",
+  "usage": "Reference viewing with source credits. Rights remain with the original creators; no production asset license is implied.",
+  "directions": [
+    {
+      "id": "quiet-minimal",
+      "title": "Quiet / minimalist",
+      "summary": "Restrained decoration, strong typography and generous breathing room.",
+      "aliases": [
+        "minimal",
+        "quiet",
+        "quiet-ui",
+        "minimalist",
+        "minimalism"
+      ],
+      "watch_for": "Keep controls discoverable; calm must not become faint or empty.",
+      "examples": [
+        {
+          "id": "webflow-03",
+          "title": "Ruul",
+          "credit": "Ruul; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae37816cf90c29e7f4e2a_66b92621.png",
+          "project_url": "https://ruul.io/",
+          "kind": "Published website screenshot",
+          "note": "A spacious monochrome hero with concise copy and one prominent entry point.",
+          "alt": "Ruul: A spacious monochrome hero with concise copy and one prominent entry point.",
+          "file": "webflow-03.png",
+          "width": 1600,
+          "height": 1213,
+          "sha256": "ec5608756dcefbbb6e779bd1ccebf731d334c97d1637c7fecad43ac0b8ac2884",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "wix-09",
+          "title": "Laurenz Marsau",
+          "credit": "Laurenz Marsau; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_20a6ce52f5954f17b84a6d2f083b6bdc~mv2.png",
+          "project_url": "https://laurenzmarsau.com/",
+          "kind": "Published website screenshot",
+          "note": "Oversized type and open space turn a project index into the main composition.",
+          "alt": "Laurenz Marsau: Oversized type and open space turn a project index into the main composition.",
+          "file": "wix-09.png",
+          "width": 1848,
+          "height": 1416,
+          "sha256": "479a80b193ed67e10efc9f291a8fec54bede53b8f0028067ebb440b30230c4fe",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "liquid-glass",
+      "title": "Liquid Glass",
+      "summary": "Translucent layers, reflective edges and controls floating above content.",
+      "aliases": [
+        "glass",
+        "liquid",
+        "glassmorphism",
+        "liquid glass"
+      ],
+      "watch_for": "Check contrast over changing backgrounds and retain an opaque fallback.",
+      "examples": [
+        {
+          "id": "apple-18",
+          "title": "Apple Music controls",
+          "credit": "Apple",
+          "source_url": "https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+          "image_url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-apple-music-dynamic-tab-bars/posters/Apple-WWDC25-Liquid-Glass-Apple-Music-dynamic-tab-bars-250609.jpg.large_2x.jpg",
+          "project_url": null,
+          "kind": "Platform example",
+          "note": "Floating playback and navigation layers reveal the imagery underneath.",
+          "alt": "Apple Music controls: Floating playback and navigation layers reveal the imagery underneath.",
+          "file": "apple-18.jpg",
+          "width": 1306,
+          "height": 734,
+          "sha256": "5e2f122046d7a48b5a34e8a328b57042ad2083e9d37bad655d0879b40abf18bf",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "apple-17",
+          "title": "Apple lock-screen material",
+          "credit": "Apple",
+          "source_url": "https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/",
+          "image_url": "https://www.apple.com/newsroom/videos/2025/autoplay/06/apple-introduces-a-delightful-and-elegant-new-software-design/apple-wwdc25-liquid-glass-details/posters/Apple-WWDC25-Liquid-Glass-details-250609.jpg.large_2x.jpg",
+          "project_url": null,
+          "kind": "Platform material example",
+          "note": "Reflective numerals demonstrate a glass treatment over a dark photographic scene.",
+          "alt": "Apple lock-screen material: Reflective numerals demonstrate a glass treatment over a dark photographic scene.",
+          "file": "apple-17.jpg",
+          "width": 960,
+          "height": 540,
+          "sha256": "4854ae565dabaaebfef73820335123bc4fa0a6f25a5a7407e22feb2d3f62b6e3",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "warm-organic",
+      "title": "Warm / organic",
+      "summary": "Earthy color, soft forms and a human visual character.",
+      "aliases": [
+        "warm",
+        "organic",
+        "natural",
+        "nature"
+      ],
+      "watch_for": "Preserve text contrast and intentional shapes; avoid decorative clutter.",
+      "examples": [
+        {
+          "id": "wix-07",
+          "title": "Gormley & Gamble",
+          "credit": "Gormley & Gamble; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_a2fb600b816d41bdabf81f811e668030~mv2.png",
+          "project_url": "https://www.gormleyandgamble.com/",
+          "kind": "Published website screenshot",
+          "note": "A cream canvas, sage texture and organic lettering create a warm identity.",
+          "alt": "Gormley & Gamble: A cream canvas, sage texture and organic lettering create a warm identity.",
+          "file": "wix-07.png",
+          "width": 1848,
+          "height": 1270,
+          "sha256": "a9f163018028727e674ed9000b3628a68519b673573d5c9062af9c717d59cc8b",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "webflow-00",
+          "title": "Anthropic",
+          "credit": "Anthropic; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae1ba704573f2342f4fe9_b86e9e78.png",
+          "project_url": "https://www.anthropic.com/",
+          "kind": "Published website screenshot",
+          "note": "Paper-colored surfaces pair serif text with simple illustrated shapes.",
+          "alt": "Anthropic: Paper-colored surfaces pair serif text with simple illustrated shapes.",
+          "file": "webflow-00.png",
+          "width": 1600,
+          "height": 963,
+          "sha256": "9f396f5c2bc10b82a20f5b2d7f32498412c75b3609a044ad86ca9d177b43f044",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "editorial",
+      "title": "Editorial / typography-led",
+      "summary": "Dramatic type, art-directed imagery and varied reading rhythm.",
+      "aliases": [
+        "typography",
+        "typographic",
+        "magazine",
+        "editorial typography"
+      ],
+      "watch_for": "Strong composition still needs readable text and a clear reading order.",
+      "examples": [
+        {
+          "id": "vertical",
+          "title": "Vertical portfolio template",
+          "credit": "Tamas Bodo",
+          "source_url": "https://www.framer.com/marketplace/templates/vertical/",
+          "image_url": "https://y4pdgnepgswqffpt.public.blob.vercel-storage.com/templates/57417/vertical-2pycDorviOx50Bxq49ZrojqmKkTHA0",
+          "project_url": "https://vertical.framer.media/",
+          "kind": "Template preview",
+          "note": "A split composition combines oversized type, fine rules and monochrome imagery.",
+          "alt": "Vertical portfolio template: A split composition combines oversized type, fine rules and monochrome imagery.",
+          "file": "vertical.jpg",
+          "width": 1600,
+          "height": 1200,
+          "sha256": "62f982a648e72f10912c37a4de987d605f485ce38cf184016304676500ee19c8",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "casa-nero",
+          "title": "CASA NERO",
+          "credit": "Elux Space",
+          "source_url": "https://dribbble.com/shots/27278082-CASA-NERO-Fashion-Website-Design-Editorial-Landing-Page",
+          "image_url": "https://cdn.dribbble.com/userupload/47385747/file/f5fcde3273618737b665ba38272208a0.png",
+          "project_url": null,
+          "kind": "Design concept",
+          "note": "Fashion photography and alternating type-and-image sections create an editorial rhythm.",
+          "alt": "CASA NERO: Fashion photography and alternating type-and-image sections create an editorial rhythm.",
+          "file": "casa-nero.png",
+          "width": 1600,
+          "height": 8487,
+          "sha256": "c376e73817063c6d83e39ae8564281de83d4ab7e6cc64f5561e03854e85a1ad2",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "expressive",
+      "title": "Expressive / playful",
+      "summary": "Confident color, distinctive shapes and lively visual emphasis.",
+      "aliases": [
+        "playful",
+        "colorful",
+        "colourful",
+        "material",
+        "material-3",
+        "expressive ui"
+      ],
+      "watch_for": "Keep meaning clear without relying only on color or animation.",
+      "examples": [
+        {
+          "id": "google-20",
+          "title": "Material 3 Expressive",
+          "credit": "Google",
+          "source_url": "https://design.google/library/expressive-material-design-google-research",
+          "image_url": "https://storage.googleapis.com/gd-prod/images/9eb4679b-45ac-4202-9749-deae98c5b904.799a99c1196c2fd4.webp",
+          "project_url": null,
+          "kind": "Platform design examples",
+          "note": "Bold color and contrasting control shapes emphasize different actions and roles.",
+          "alt": "Material 3 Expressive: Bold color and contrasting control shapes emphasize different actions and roles.",
+          "file": "google-20.webp",
+          "width": 8000,
+          "height": 4000,
+          "sha256": "6a599ce450c6fce27cffa3cd2237896fcc714daf06e705a63fa1a4a617448703",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "webflow-05",
+          "title": "Tesoro",
+          "credit": "Tesoro; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae4ff1629e0fb65cc6b9a_9a126632.png",
+          "project_url": "https://www.tesoroxp.com/",
+          "kind": "Published website screenshot",
+          "note": "A multicolor palette and shaped panels give the page an energetic character.",
+          "alt": "Tesoro: A multicolor palette and shaped panels give the page an energetic character.",
+          "file": "webflow-05.png",
+          "width": 1600,
+          "height": 1221,
+          "sha256": "5a9a2a718b7155935a97f299691974d19df290bdf3f0cf90277e7dbcb694b0d4",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "tactile",
+      "title": "Tactile / handcrafted",
+      "summary": "Illustration, print texture and a deliberately handmade feel.",
+      "aliases": [
+        "handmade",
+        "handcrafted",
+        "tactile-maximalism",
+        "illustrated"
+      ],
+      "watch_for": "Use coherent assets and keep textures away from essential text contrast.",
+      "examples": [
+        {
+          "id": "wix-08",
+          "title": "Dopple Press",
+          "credit": "Dopple Press; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_d5ec847dc4c24046997a11ee3b4fb6ee~mv2.png",
+          "project_url": "https://www.dopplepress.com/",
+          "kind": "Published website screenshot",
+          "note": "Paper texture, illustrated characters and print-like lettering carry the identity.",
+          "alt": "Dopple Press: Paper texture, illustrated characters and print-like lettering carry the identity.",
+          "file": "wix-08.png",
+          "width": 1848,
+          "height": 1270,
+          "sha256": "67396e3ea25a4db04ac28be2d3e02aac08c02e6026c95aa1800259478112e6f9",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "webflow-02",
+          "title": "Rootly",
+          "credit": "Rootly; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae33ac0aeb6811f85e68f_a5a31856.png",
+          "project_url": "https://rootly.com/",
+          "kind": "Published website screenshot",
+          "note": "A painted landscape frames product UI as an illustrated composition.",
+          "alt": "Rootly: A painted landscape frames product UI as an illustrated composition.",
+          "file": "webflow-02.png",
+          "width": 1600,
+          "height": 1041,
+          "sha256": "a5d6911336e0cfbe2e163b48219899f5917c6122ab56ec1a2239c952adff4356",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "brutalist",
+      "title": "Brutalist / utilitarian",
+      "summary": "Raw typography, exposed structure and unconventional arrangements.",
+      "aliases": [
+        "brutalism",
+        "neo-brutalism",
+        "neobrutalism",
+        "utilitarian",
+        "anti-design"
+      ],
+      "watch_for": "Experimental presentation still needs obvious navigation and usable targets.",
+      "examples": [
+        {
+          "id": "webflow-01",
+          "title": "Pencil",
+          "credit": "Pencil; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae33ac0aeb6811f85e692_11ec9105.png",
+          "project_url": "https://www.pencil.dev/",
+          "kind": "Published website screenshot",
+          "note": "Large direct typography and ASCII imagery create a raw, tool-like treatment.",
+          "alt": "Pencil: Large direct typography and ASCII imagery create a raw, tool-like treatment.",
+          "file": "webflow-01.png",
+          "width": 1600,
+          "height": 1211,
+          "sha256": "4e3b155d1f896ced6516953cc0371c277a56de76690d5e62e611a242230067b4",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "wix-12",
+          "title": "Isshī",
+          "credit": "Isshī; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_3b0a655e436b470eb1d91f0cdcfad0d0~mv2.png",
+          "project_url": "https://www.isshi.us/",
+          "kind": "Published website screenshot",
+          "note": "Sparse controls and unconventional object placement illustrate the anti-design end of this family.",
+          "alt": "Isshī: Sparse controls and unconventional object placement illustrate the anti-design end of this family.",
+          "file": "wix-12.png",
+          "width": 924,
+          "height": 635,
+          "sha256": "b30fe10c71f95121158e3ea833b81c8da33a48a604f88e06f9ed2dc1f2976005",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "retro",
+      "title": "Retro / nostalgic",
+      "summary": "Period typography, early-web motifs and deliberately nostalgic color.",
+      "aliases": [
+        "nostalgic",
+        "nostalgia",
+        "y2k",
+        "vintage",
+        "retro revival"
+      ],
+      "watch_for": "Borrow the visual language while keeping contemporary accessibility and behavior.",
+      "examples": [
+        {
+          "id": "wix-14",
+          "title": "Ryan Haskins",
+          "credit": "Ryan Haskins; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_d064ac268b9b4d81ae9c435503a17528~mv2.png",
+          "project_url": "https://www.ryanhaskins.com/",
+          "kind": "Published website screenshot",
+          "note": "Glossy lettering, oval links and night photography recall early personal websites.",
+          "alt": "Ryan Haskins: Glossy lettering, oval links and night photography recall early personal websites.",
+          "file": "wix-14.png",
+          "width": 924,
+          "height": 552,
+          "sha256": "91c0d0d8263c742d78f6263b13916ed42e81fb59288d14ea6bb878702509b06d",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "wix-13",
+          "title": "VayCay visual concept",
+          "credit": "Wix editorial illustration",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_ad60b98496344d94b0a266491a941cf7~mv2.jpg",
+          "project_url": null,
+          "kind": "Illustrative website mockup",
+          "note": "Memphis-like shapes and bright period colors demonstrate an eighties-inspired direction.",
+          "alt": "VayCay visual concept: Memphis-like shapes and bright period colors demonstrate an eighties-inspired direction.",
+          "file": "wix-13.jpg",
+          "width": 1110,
+          "height": 740,
+          "sha256": "0d781fe63fef2f87fac4fe68f58be4bec53dcf4d905279360699640ec900d531",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "immersive",
+      "title": "Immersive / spatial",
+      "summary": "Scenes, expansive canvases and imagery that become the interface.",
+      "aliases": [
+        "spatial",
+        "surreal",
+        "hyperreality",
+        "immersive-surreal",
+        "infinite-canvas"
+      ],
+      "watch_for": "Provide clear navigation and accessible alternatives to scene or canvas interactions.",
+      "examples": [
+        {
+          "id": "wix-11",
+          "title": "Lennnie",
+          "credit": "Lennnie; screenshot published by Wix",
+          "source_url": "https://www.wix.com/blog/web-design-trends",
+          "image_url": "https://static.wixstatic.com/media/a77aa0_5a350563471c4f2893fad67fa34329c5~mv2.png",
+          "project_url": "https://www.itslennnie.com/",
+          "kind": "Published website screenshot",
+          "note": "An illustrated room turns site destinations into objects within a scene.",
+          "alt": "Lennnie: An illustrated room turns site destinations into objects within a scene.",
+          "file": "wix-11.png",
+          "width": 1848,
+          "height": 1270,
+          "sha256": "5f99f430977af991c174a4daf3d3c8259627612d4ebeb0a404c6d9ef9445d394",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "webflow-06",
+          "title": "Flim",
+          "credit": "Flim; screenshot published by Webflow",
+          "source_url": "https://webflow.com/blog/web-design-trends-2026",
+          "image_url": "https://cdn.prod.website-files.com/687e8d1b96312cc631cafec7/694ae8608a24dfb20306521a_0a621f7d.png",
+          "project_url": "https://www.flim.ai/",
+          "kind": "Published website screenshot",
+          "note": "A spacious image canvas organizes discovery through freely placed film stills.",
+          "alt": "Flim: A spacious image canvas organizes discovery through freely placed film stills.",
+          "file": "webflow-06.png",
+          "width": 1600,
+          "height": 1184,
+          "sha256": "6ca9dd7db5de140a65eedf1406da5f2181e01adf72a6db3cdfd0c4764ff01a01",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    }
+  ]
+}

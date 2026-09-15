@@ -1,0 +1,30 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "altered-design",
+  "metadata": {
+    "description": "Choose a visual direction with sourced examples, build web UI, and verify usability and execution."
+  },
+  "owner": {
+    "name": "Kevin Kadosh"
+  },
+  "plugins": [
+    {
+      "name": "altered-design",
+      "description": "Six modes for visual style selection, website recreation, UI development, redesign, review and design-system documentation. Includes website and app reference packs plus reusable project-aware visual boards.",
+      "version": "2.2.0",
+      "author": {
+        "name": "Kevin Kadosh"
+      },
+      "source": "./",
+      "category": "design",
+      "tags": [
+        "design",
+        "ui",
+        "ux",
+        "frontend",
+        "accessibility",
+        "skills"
+      ]
+    }
+  ]
+}

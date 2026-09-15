@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>xdex — 9 directions visuelles</title>
+<style>
+:root{color-scheme:light;--ink:#202224;--muted:#595c5f;--paper:#f4f3ef;--line:#d6d6cf;--accent:#245740}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-underline-offset:3px}a:hover{color:var(--accent)}button,select{font:inherit}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #1c6ba4;outline-offset:5px}
+h1,h2,h3,p,figure{margin:0}h1{font-size:clamp(34px,4.3vw,60px);line-height:1.08;letter-spacing:-2px;max-width:880px}h2{font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-1.2px}h3{font-size:18px;line-height:1.3}
+.wrap{max-width:1320px;margin:auto;padding:0 36px}.masthead{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid var(--line);font-size:13px}.brand{font-size:23px;font-weight:750;letter-spacing:-1px}.masthead span:last-child{color:var(--muted)}
+.intro{padding:48px 0 30px}.eyebrow{text-transform:uppercase;font-size:11px;letter-spacing:1.3px;font-weight:650;display:block;color:var(--muted);margin-bottom:14px}.intro p{max-width:750px;margin-top:18px;color:var(--muted);font-size:18px}.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.facts span{font-size:12px;border:1px solid var(--line);border-radius:30px;padding:5px 12px;background:#fff9}
+.overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.option{text-decoration:none;background:white;border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:border-color .15s}.option:hover{border-color:var(--accent)}.thumb{height:180px;background:#e8e8e4;padding:10px}.thumb img{width:100%;height:100%;object-fit:contain;display:block}.option-copy{padding:16px;display:flex;gap:12px;align-items:center}.letter{font:600 14px/32px ui-monospace,monospace;border:1px solid var(--line);border-radius:7px;width:32px;text-align:center;flex-shrink:0}.option-copy strong{display:block;font-size:16px;line-height:1.3}.option-copy div span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.arrow{margin-left:auto;font-size:20px}
+.tabs-note{border:1px solid #b9cec2;background:#e9f0e9;border-radius:11px;padding:20px 24px;margin-top:28px}.tabs-note h2{font-size:21px;letter-spacing:-.5px}.tabs-note p{margin-top:6px;color:#3f5147;max-width:920px}.tabs-note details{margin-top:12px}.tabs-note summary{cursor:pointer;font-size:14px;font-weight:600;width:fit-content}.tabs-note img{display:block;width:100%;max-width:1060px;margin-top:16px;border:1px solid var(--line);border-radius:7px}.tabs-note .caption{font-size:12px}
+.board-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:46px 0 20px;padding-top:22px;border-top:1px solid var(--line)}.board-tools label{font-size:14px;font-weight:650}.board-tools select{max-width:100%;border:1px solid #90958e;border-radius:7px;padding:9px 38px 9px 12px;background:white;color:var(--ink)}.board-tools p{margin-left:auto;color:var(--muted);font-size:13px}.direction{background:white;border:1px solid var(--line);border-radius:14px;margin-bottom:28px;scroll-margin-top:22px;overflow:hidden}.direction[hidden]{display:none}.direction-head{display:flex;justify-content:space-between;gap:20px;padding:28px 28px 24px}.direction-head p{color:var(--muted);margin-top:12px;max-width:750px}.direction-head .eyebrow{margin-bottom:8px}.back{font-size:12px;white-space:nowrap;align-self:flex-start;margin-top:5px}.examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding:0 28px 28px}.image-link{display:block;position:relative;background:#ededea;border:1px solid var(--line);border-radius:8px;overflow:hidden}.image-link img{display:block;width:100%;height:370px;object-fit:contain;padding:10px}.zoom{position:absolute;bottom:10px;right:10px;font-size:12px;background:#fff;color:var(--ink);border:1px solid var(--line);padding:5px 9px;border-radius:5px}.kind{display:block;color:var(--muted);font-size:11px;margin:16px 0 7px;font-weight:550}.credit{font-size:12px;color:var(--muted);margin-top:6px}figcaption>p:last-child{margin-top:12px;font-size:14px;line-height:1.6}.translation{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;background:#f7f7f3;padding:22px 28px;border-top:1px solid var(--line)}.translation h3{font-size:13px}.translation p{font-size:14px;margin-top:7px;color:#494d49}
+footer{padding:10px 0 42px;color:var(--muted);font-size:13px;max-width:920px}footer p+p{margin-top:8px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip{position:absolute;left:20px;top:-100px;background:white;padding:10px;z-index:5}.skip:focus{top:12px}
+@media(max-width:950px){.overview{grid-template-columns:repeat(2,minmax(0,1fr))}.image-link img{height:290px}.direction-head{display:block}.back{display:inline-block;margin-top:14px}.translation{grid-template-columns:1fr;gap:18px}.board-tools p{width:100%;margin-left:0}}
+@media(max-width:600px){.wrap{padding:0 18px}.masthead{padding:18px 0}.masthead span:last-child{max-width:170px;text-align:right;font-size:11px}.intro{padding-top:30px}h1{letter-spacing:-1.2px}.intro p{font-size:16px}.overview{grid-template-columns:1fr}.thumb{height:195px}.examples{grid-template-columns:1fr;padding:0 16px 20px;gap:25px}.image-link img{height:290px}.direction-head{padding:22px 16px}.translation{padding:20px 16px}.tabs-note{padding:18px}.board-tools{margin-top:30px}.board-tools select{width:100%}.option-copy{padding:14px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body><a class="skip" href="#overview">Aller aux directions</a><main class="wrap">
+<div class="masthead"><span class="brand">xdex<span aria-hidden="true">↗</span></span><span>Exploration visuelle · 09 septembre 2026</span></div>
+<header class="intro"><span class="eyebrow">Nouveau dashboard · nouvelle direction</span><h1>Une autre personnalité<br>pour xdex.</h1>
+<p>Neuf pistes pour sortir du quiet minimal. Ouvre une direction pour voir ses deux références et la manière dont elle pourrait se traduire dans ton dashboard.</p>
+<div class="facts"><span>9 directions</span><span>18 images sourcées</span><span>Onglets conservés</span><span>Combinaisons possibles</span></div></header>
+<nav class="overview" id="overview" aria-label="Les neuf directions"><a class="option" href="#neo-brutalist" data-jump="neo-brutalist">
+      <div class="thumb"><img src="references/neo-bruddle.png" alt="" /></div>
+      <div class="option-copy"><span class="letter">A</span><div><strong>Néo-brutaliste / graphique</strong>
+      <span>Contours et aplats</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#expressive" data-jump="expressive">
+      <div class="thumb"><img src="references/expressive-apps.webp" alt="" /></div>
+      <div class="option-copy"><span class="letter">B</span><div><strong>Expressif / playful</strong>
+      <span>Couleur et formes</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#liquid-glass" data-jump="liquid-glass">
+      <div class="thumb"><img src="references/craft-workspace.jpg" alt="" /></div>
+      <div class="option-copy"><span class="letter">C</span><div><strong>Liquid Glass / profondeur</strong>
+      <span>Transparence et couches</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#editorial" data-jump="editorial">
+      <div class="thumb"><img src="references/editorial-geist.png" alt="" /></div>
+      <div class="option-copy"><span class="letter">D</span><div><strong>Éditorial / magazine</strong>
+      <span>Contenu et typographie</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#warm-organic" data-jump="warm-organic">
+      <div class="thumb"><img src="references/warm-lumora.jpg" alt="" /></div>
+      <div class="option-copy"><span class="letter">E</span><div><strong>Organique / illustré</strong>
+      <span>Chaleur et caractère</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#tactile" data-jump="tactile">
+      <div class="thumb"><img src="references/tactile-finance.jpg" alt="" /></div>
+      <div class="option-copy"><span class="letter">F</span><div><strong>Tactile / relief</strong>
+      <span>Matière et volume</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#retro" data-jump="retro">
+      <div class="thumb"><img src="references/retro-8bit.webp" alt="" /></div>
+      <div class="option-copy"><span class="letter">G</span><div><strong>Rétro / pixel</strong>
+      <span>Nostalgie assumée</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#technical" data-jump="technical">
+      <div class="thumb"><img src="references/technical-orion-1.png" alt="" /></div>
+      <div class="option-copy"><span class="letter">H</span><div><strong>Technique / cockpit</strong>
+      <span>Instrumentation sombre</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a><a class="option" href="#spatial" data-jump="spatial">
+      <div class="thumb"><img src="references/spatial-kosmik.png" alt="" /></div>
+      <div class="option-copy"><span class="letter">I</span><div><strong>Visuel / canvas</strong>
+      <span>Collections dans l’espace</span></div><span class="arrow" aria-hidden="true">↗</span></div>
+      <span class="sr-only">Voir les deux références</span></a></nav>
+<aside class="tabs-note" aria-labelledby="tabs-title"><h2 id="tabs-title">Tes onglets font partie du brief.</h2>
+<p>Tableau de bord fixe, bibliothèque et plusieurs ressources ouvertes, fermeture et bouton « + ». Le changement d’onglet conserve la recherche, les filtres et la position de chaque vue. Leur apparence suivra la direction choisie.</p>
+<details><summary>Revoir ta référence d’interaction</summary><img src="references/xdex-user-tabs.png" alt="Capture xdex fournie : onglets Tableau de bord, Bibliothèque et une ressource, contrôles de fermeture et bouton plus."><p class="caption">Capture fournie par toi · comportement à conserver dans le nouveau prototype.</p></details></aside>
+<div class="board-tools"><label for="direction-filter">Afficher</label><select id="direction-filter"><option value="all">Toutes les directions</option><option value="neo-brutalist">A · Néo-brutaliste / graphique</option><option value="expressive">B · Expressif / playful</option><option value="liquid-glass">C · Liquid Glass / profondeur</option><option value="editorial">D · Éditorial / magazine</option><option value="warm-organic">E · Organique / illustré</option><option value="tactile">F · Tactile / relief</option><option value="retro">G · Rétro / pixel</option><option value="technical">H · Technique / cockpit</option><option value="spatial">I · Visuel / canvas</option></select><p>Cliquer sur une image l’ouvre en grand dans un nouvel onglet.</p></div>
+<div id="references"><section class="direction" id="neo-brutalist" aria-labelledby="title-neo-brutalist">
+      <header class="direction-head"><div><span class="eyebrow">Direction A · Contours et aplats</span>
+      <h2 id="title-neo-brutalist" tabindex="-1">Néo-brutaliste / graphique</h2><p>Typographie franche, bordures visibles et aplats de couleur.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/neo-bruddle.png" target="_blank" rel="noopener" aria-label="Agrandir : Bruddle dashboard (nouvel onglet)">
+          <img data-example src="references/neo-bruddle.png" alt="Bruddle dashboard. Navigation sombre, panneaux rectangulaires, typographie affirmée et quelques étiquettes colorées." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Kit UI de dashboard</span><h3>Bruddle dashboard</h3>
+          <p class="credit">WhiteUI.Store · <a href="https://dribbble.com/shots/21440274-Dashboard-inspired-by-neo-brutalism" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Navigation sombre, panneaux rectangulaires, typographie affirmée et quelques étiquettes colorées.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/neo-serj.png" target="_blank" rel="noopener" aria-label="Agrandir : Dashboard in Neo-Brutalism style (nouvel onglet)">
+          <img data-example src="references/neo-serj.png" alt="Dashboard in Neo-Brutalism style. Cartes détourées, aplats pastel et colonne secondaire visuellement distincte." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept de dashboard</span><h3>Dashboard in Neo-Brutalism style</h3>
+          <p class="credit">Serj Mikey · <a href="https://dribbble.com/shots/21285880-Dashboard-in-Neo-Brutalism-style" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Cartes détourées, aplats pastel et colonne secondaire visuellement distincte.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un espace crème et encre, une file de tri très visible, des collections lilas et citron. Les onglets ressemblent à des intercalaires graphiques.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Les bordures et les couleurs doivent laisser ressortir la ressource et son action principale.</p></div></div></section><section class="direction" id="expressive" aria-labelledby="title-expressive">
+      <header class="direction-head"><div><span class="eyebrow">Direction B · Couleur et formes</span>
+      <h2 id="title-expressive" tabindex="-1">Expressif / playful</h2><p>Couleurs soutenues, grandes formes arrondies et rythme énergique.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/expressive-apps.webp" target="_blank" rel="noopener" aria-label="Agrandir : Material 3 Expressive app studies (nouvel onglet)">
+          <img data-example src="references/expressive-apps.webp" alt="Material 3 Expressive app studies. Aplats colorés, contrastes de taille et groupes de commandes. Références mobiles à adapter au dashboard desktop." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concepts mobiles de design system</span><h3>Material 3 Expressive app studies</h3>
+          <p class="credit">Google Design · <a href="https://design.google/library/expressive-material-design-google-research" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Aplats colorés, contrastes de taille et groupes de commandes. Références mobiles à adapter au dashboard desktop.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/expressive-email.webp" target="_blank" rel="noopener" aria-label="Agrandir : Expressive email composition study (nouvel onglet)">
+          <img data-example src="references/expressive-email.webp" alt="Expressive email composition study. Action principale mise en évidence. L’annotation de performance concerne l’étude Google ; elle ne prédit aucun résultat pour xdex." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept mobile de recherche</span><h3>Expressive email composition study</h3>
+          <p class="credit">Google Design · <a href="https://design.google/library/expressive-material-design-google-research" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Action principale mise en évidence. L’annotation de performance concerne l’étude Google ; elle ne prédit aucun résultat pour xdex.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un accueil prune, lilas et corail ; des collections colorées ; des actions Garder / Archiver visibles. Des onglets arrondis, avec un état actif bien distinct.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Les grands composants prennent de la place. La bibliothèque doit conserver une vue compacte.</p></div></div></section><section class="direction" id="liquid-glass" aria-labelledby="title-liquid-glass">
+      <header class="direction-head"><div><span class="eyebrow">Direction C · Transparence et couches</span>
+      <h2 id="title-liquid-glass" tabindex="-1">Liquid Glass / profondeur</h2><p>Cadre flottant, arrière-plan coloré et navigation translucide.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/craft-workspace.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Craft workspace across devices (nouvel onglet)">
+          <img data-example src="references/craft-workspace.jpg" alt="Craft workspace across devices. Organisation de documents en tableau, navigation flottante et cadre translucide." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Image produit d’application native · septembre 2025</span><h3>Craft workspace across devices</h3>
+          <p class="credit">Craft Team · <a href="https://www.craft.do/blog/craft-update-3-2-6" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Organisation de documents en tableau, navigation flottante et cadre translucide.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/craft-tasks.png" target="_blank" rel="noopener" aria-label="Agrandir : Craft tasks workspace (nouvel onglet)">
+          <img data-example src="references/craft-tasks.png" alt="Craft tasks workspace. Navigation par groupes et couches de surface ; conserver un fond stable pour le texte long." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Image produit d’application native · septembre 2025</span><h3>Craft tasks workspace</h3>
+          <p class="credit">Craft Team · <a href="https://www.craft.do/blog/craft-update-3-2-6" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Navigation par groupes et couches de surface ; conserver un fond stable pour le texte long.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Une fenêtre flottante sur fond bleu-violet, une bibliothèque visuelle et une surface de lecture opaque. Les onglets occupent une couche translucide dédiée.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Le contraste doit rester stable sur le fond. Ces références natives demandent une adaptation au Web.</p></div></div></section><section class="direction" id="editorial" aria-labelledby="title-editorial">
+      <header class="direction-head"><div><span class="eyebrow">Direction D · Contenu et typographie</span>
+      <h2 id="title-editorial" tabindex="-1">Éditorial / magazine</h2><p>Titres à forte présence, images, rubriques et compositions variées.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/editorial-geist.png" target="_blank" rel="noopener" aria-label="Agrandir : Geist — identité et vues de lecture (nouvel onglet)">
+          <img data-example src="references/editorial-geist.png" alt="Geist — identité et vues de lecture. Grandes surfaces de titre, palette vive et association photo / texte. Référence de composition éditoriale, pas de navigation d’application." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Étude de refonte de magazine · 2024</span><h3>Geist — identité et vues de lecture</h3>
+          <p class="credit">Caitlin Aboud · <a href="https://www.caitlinaboud.com/project/geist" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Grandes surfaces de titre, palette vive et association photo / texte. Référence de composition éditoriale, pas de navigation d’application.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/editorial-evie.png" target="_blank" rel="noopener" aria-label="Agrandir : Evie Magazine — espace personnel (nouvel onglet)">
+          <img data-example src="references/editorial-evie.png" alt="Evie Magazine — espace personnel. Titres serif, collections par sujet et favoris illustrés. Un exemple directement lié à la lecture et aux bookmarks." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Capture de projet éditorial · 2024</span><h3>Evie Magazine — espace personnel</h3>
+          <p class="credit">Delicious Simplicity · publié par DatoCMS · <a href="https://www.datocms.com/partners/delicious-simplicity/showcase/evie-magazine" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Titres serif, collections par sujet et favoris illustrés. Un exemple directement lié à la lecture et aux bookmarks.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Une revue personnelle : une ressource principale, des sélections par sujet et une bibliothèque illustrée. Onglets sobres, titres éditoriaux et accents orange ou bordeaux.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Les miniatures doivent apporter du repérage. Prévoir une présentation soignée pour les ressources sans image.</p></div></div></section><section class="direction" id="warm-organic" aria-labelledby="title-warm-organic">
+      <header class="direction-head"><div><span class="eyebrow">Direction E · Chaleur et caractère</span>
+      <h2 id="title-warm-organic" tabindex="-1">Organique / illustré</h2><p>Tons crème, argile ou pastel, illustrations et courbes souples.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/warm-lumora.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Lumora — Wellness Dashboard (nouvel onglet)">
+          <img data-example src="references/warm-lumora.jpg" alt="Lumora — Wellness Dashboard. Fond crème, accents argile, illustration intégrée et surfaces colorées. Reprendre le langage visuel, sans importer les widgets de santé." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept de dashboard</span><h3>Lumora — Wellness Dashboard</h3>
+          <p class="credit">Publié par Maaz Siddiqui · <a href="https://dribbble.com/shots/26401282-Lumora-Wellness-Dashboard-UI-Design" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Fond crème, accents argile, illustration intégrée et surfaces colorées. Reprendre le langage visuel, sans importer les widgets de santé.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/warm-zenflow.png" target="_blank" rel="noopener" aria-label="Agrandir : ZenFlow — planning de sessions (nouvel onglet)">
+          <img data-example src="references/warm-zenflow.png" alt="ZenFlow — planning de sessions. Blocs lavande et menthe, personnages illustrés, courbes. Exemple partiel : la composition d’origine est décrite comme minimaliste par sa créatrice." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept de dashboard · septembre 2025</span><h3>ZenFlow — planning de sessions</h3>
+          <p class="credit">Yara Alkadi · <a href="https://www.behance.net/gallery/232760657/ZenFlow-Yoga-Scheduling-dashboard-UI-case-study" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Blocs lavande et menthe, personnages illustrés, courbes. Exemple partiel : la composition d’origine est décrite comme minimaliste par sa créatrice.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un bureau personnel chaleureux, des collections illustrées et des surfaces crème / terre cuite. Les onglets deviennent des intercalaires arrondis ; le contenu garde une grille régulière.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Les illustrations restent ponctuelles. La seconde référence, plus calme, sert surtout pour les courbes et la palette.</p></div></div></section><section class="direction" id="tactile" aria-labelledby="title-tactile">
+      <header class="direction-head"><div><span class="eyebrow">Direction F · Matière et volume</span>
+      <h2 id="title-tactile" tabindex="-1">Tactile / relief</h2><p>Surfaces en relief, commandes enfoncées et lumière sur les bords.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/tactile-finance.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Spend.io — personal finance (nouvel onglet)">
+          <img data-example src="references/tactile-finance.jpg" alt="Spend.io — personal finance. Ombres douces, commandes creusées et objets en volume. Référence de matière uniquement ; les contrôles pâles ne constituent pas un modèle accessible." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept historique de dashboard</span><h3>Spend.io — personal finance</h3>
+          <p class="credit">Jordan Hughes · <a href="https://dribbble.com/shots/9044225-Skeuomorph-personal-finance-app-dashboard" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Ombres douces, commandes creusées et objets en volume. Référence de matière uniquement ; les contrôles pâles ne constituent pas un modèle accessible.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/tactile-dark.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Skeuomorphic UI / Interaction (nouvel onglet)">
+          <img data-example src="references/tactile-dark.jpg" alt="Skeuomorphic UI / Interaction. Panneaux bleutés, relief des boutons et éclairage des bords. L’effet reste secondaire par rapport à la lisibilité." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Concept de dashboard · novembre 2020</span><h3>Skeuomorphic UI / Interaction</h3>
+          <p class="credit">Publié par Rehab Badwy · <a href="https://www.behance.net/gallery/108003477/Skeuomorphic-UIInteraction-dashboard" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Panneaux bleutés, relief des boutons et éclairage des bords. L’effet reste secondaire par rapport à la lisibilité.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Une bibliothèque comme un plateau de fiches, avec des commandes qui semblent physiques. Les onglets ont un relief léger et une position active enfoncée.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Ces anciens concepts ont des contrastes faibles. La profondeur peut inspirer xdex ; les textes et contours devront être renforcés.</p></div></div></section><section class="direction" id="retro" aria-labelledby="title-retro">
+      <header class="direction-head"><div><span class="eyebrow">Direction G · Nostalgie assumée</span>
+      <h2 id="title-retro" tabindex="-1">Rétro / pixel</h2><p>Cadres en pixels, étiquettes monospace et références aux interfaces anciennes.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/retro-8bit.webp" target="_blank" rel="noopener" aria-label="Agrandir : 8bitcn — composants et dashboard (nouvel onglet)">
+          <img data-example src="references/retro-8bit.webp" alt="8bitcn — composants et dashboard. Bordures à angles en pixels, accent ambre et commandes reconnaissables." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Présentation de bibliothèque UI</span><h3>8bitcn — composants et dashboard</h3>
+          <p class="credit">orcdev / 8bitcn · <a href="https://peerlist.io/orcdev/project/8bitcn" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Bordures à angles en pixels, accent ambre et commandes reconnaissables.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/retro-office.png" target="_blank" rel="noopener" aria-label="Agrandir : Pixel Office — command center (nouvel onglet)">
+          <img data-example src="references/retro-office.png" alt="Pixel Office — command center. Zones colorées, étiquettes monospace et petits personnages pixel. Reprendre les repères de collections sans reproduire toute la scène." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Capture d’application personnelle · 2026</span><h3>Pixel Office — command center</h3>
+          <p class="credit">DavidAI311 · <a href="https://dev.to/minatoplanb/i-got-tired-of-text-dashboards-so-i-built-a-pixel-art-command-center-1bf1" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Zones colorées, étiquettes monospace et petits personnages pixel. Reprendre les repères de collections sans reproduire toute la scène.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un atelier de collections façon bureau rétro : onglets rectangulaires, couleurs de dossiers et petits détails pixel. Les résumés utilisent une police de lecture normale.</p></div>
+      <div><h3>Point à maîtriser</h3><p>La police pixel est réservée aux titres courts. Les détails décoratifs ne doivent pas ralentir le tri.</p></div></div></section><section class="direction" id="technical" aria-labelledby="title-technical">
+      <header class="direction-head"><div><span class="eyebrow">Direction H · Instrumentation sombre</span>
+      <h2 id="title-technical" tabindex="-1">Technique / cockpit</h2><p>Surface sombre, traits fins, données compactes et accents lumineux.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/technical-orion-1.png" target="_blank" rel="noopener" aria-label="Agrandir : ORION — vue dashboard (nouvel onglet)">
+          <img data-example src="references/technical-orion-1.png" alt="ORION — vue dashboard. Panneaux instrumentés, fond sombre et accents cyan. Pour xdex, afficher des données utiles au tri, pas des jauges décoratives." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Kit UI de science-fiction · référence historique</span><h3>ORION — vue dashboard</h3>
+          <p class="credit">laaqiq · image publiée par Qubstudio · <a href="https://creativemarket.com/laaqiq/778624-ORION-%E2%80%93-Sci-Fi-Dashboard" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Panneaux instrumentés, fond sombre et accents cyan. Pour xdex, afficher des données utiles au tri, pas des jauges décoratives.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/technical-orion-2.jpg" target="_blank" rel="noopener" aria-label="Agrandir : ORION — vue profil et flux (nouvel onglet)">
+          <img data-example src="references/technical-orion-2.jpg" alt="ORION — vue profil et flux. Grille dense, métadonnées compactes et rail de navigation. Les contrastes et tailles de texte seraient augmentés." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Kit UI de science-fiction · référence historique</span><h3>ORION — vue profil et flux</h3>
+          <p class="credit">laaqiq · <a href="https://creativemarket.com/laaqiq/778624-ORION-%E2%80%93-Sci-Fi-Dashboard" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Grille dense, métadonnées compactes et rail de navigation. Les contrastes et tailles de texte seraient augmentés.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un poste de veille : flux de sources, file de tri et coûts visibles. Onglets compacts et précis, accent cyan / ambre, métadonnées monospace et résumés lisibles.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Ces références de science-fiction sont anciennes. Les petits textes et les effets lumineux demandent une adaptation importante.</p></div></div></section><section class="direction" id="spatial" aria-labelledby="title-spatial">
+      <header class="direction-head"><div><span class="eyebrow">Direction I · Collections dans l’espace</span>
+      <h2 id="title-spatial" tabindex="-1">Visuel / canvas</h2><p>Cartes, images et notes regroupées sur une grande surface visuelle.</p></div>
+      <a class="back" href="#overview">Les 9 directions ↑</a></header>
+      <div class="examples"><figure>
+          <a class="image-link" href="references/spatial-kosmik.png" target="_blank" rel="noopener" aria-label="Agrandir : Kosmik — tableau de ressources (nouvel onglet)">
+          <img data-example src="references/spatial-kosmik.png" alt="Kosmik — tableau de ressources. Images, liens et documents dans des groupes spatiaux. Référence historique, pas une recommandation de service actuel." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Capture historique · 2023 · produit arrêté en 2026</span><h3>Kosmik — tableau de ressources</h3>
+          <p class="credit">Kosmik · publié par TechCrunch · <a href="https://techcrunch.com/2023/12/21/meet-kosmik-a-visual-canvas-with-an-in-built-pdf-reader-and-a-web-browser/" target="_blank" rel="noopener noreferrer">Source ↗</a> · <a href="https://www.kosmik.app/" target="_blank" rel="noopener noreferrer">Statut du produit ↗</a></p>
+          <p>Images, liens et documents dans des groupes spatiaux. Référence historique, pas une recommandation de service actuel.</p></figcaption></figure><figure>
+          <a class="image-link" href="references/spatial-integrity.png" target="_blank" rel="noopener" aria-label="Agrandir : Integrity — canvas de projet (nouvel onglet)">
+          <img data-example src="references/spatial-integrity.png" alt="Integrity — canvas de projet. Notes reliées, regroupements de cartes et barre d’outils locale. Pour xdex, les connexions représenteraient les liens entre ressources." />
+          <span class="zoom">Agrandir ↗</span></a>
+          <figcaption><span class="kind">Aperçu de produit en bêta</span><h3>Integrity — canvas de projet</h3>
+          <p class="credit">Integrity · <a href="https://integrity.sh/" target="_blank" rel="noopener noreferrer">Source ↗</a></p>
+          <p>Notes reliées, regroupements de cartes et barre d’outils locale. Pour xdex, les connexions représenteraient les liens entre ressources.</p></figcaption></figure></div>
+      <div class="translation"><div><h3>Ce que ça donnerait pour xdex</h3><p>Un tableau de collections, avec des ressources regroupées par sujet et des liens croisés. Les onglets permettent de passer du tableau à la bibliothèque et aux vues de lecture.</p></div>
+      <div><h3>Point à maîtriser</h3><p>Le placement libre est une interaction supplémentaire. Une liste reste disponible pour chercher, trier et naviguer au clavier.</p></div></div></section></div>
+<footer><p>Ces images servent à choisir un langage visuel. Les concepts, kits UI, captures natives et références historiques sont identifiés ; ils ne prouvent pas la qualité UX de la future application.</p><p>La planche a été vérifiée le 9 septembre 2026. Toutes les images ne datent pas de 2026. Les bonnes pratiques et l’accessibilité seront vérifiées séparément sur le prototype xdex.</p><p>Pour la suite, indique la lettre A–I dans la conversation, ou une combinaison et ce qui t’attire dans chaque référence. Le catalogue reste ouvert.</p></footer>
+</main><script>
+const filter=document.querySelector('#direction-filter');
+const sections=[...document.querySelectorAll('.direction')];
+function show(value){for(const s of sections)s.hidden=value!=='all'&&s.id!==value;filter.value=value;}
+filter.addEventListener('change',()=>{show(filter.value);if(filter.value!=='all'){const s=document.getElementById(filter.value);s.querySelector('h2').focus({preventScroll:true});s.scrollIntoView();}else document.querySelector('.board-tools').scrollIntoView();});
+for(const link of document.querySelectorAll('[data-jump]'))link.addEventListener('click',()=>show(link.dataset.jump));
+for(const link of document.querySelectorAll('.back'))link.addEventListener('click',()=>show('all'));
+window.addEventListener('hashchange',()=>{const id=location.hash.slice(1);if(sections.some(s=>s.id===id))show(id);});
+if(sections.some(s=>s.id===location.hash.slice(1)))show(location.hash.slice(1));
+</script></body></html>

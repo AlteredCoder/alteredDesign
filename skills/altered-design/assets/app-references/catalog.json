@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-09",
+  "description": "Neuf propositions visuelles pour un nouveau prototype xdex. Catalogue ouvert, non exhaustif. Les dates des images ne sont pas des dates de recommandations UX.",
+  "usage": "Images de référence uniquement ; droits conservés par leurs créateurs. Ne pas réutiliser comme assets du prototype xdex.",
+  "directions": [
+    {
+      "id": "neo-brutalist",
+      "title": "Néo-brutaliste / graphique",
+      "aliases": [],
+      "summary": "Typographie franche, bordures visibles et aplats de couleur.",
+      "tag": "Contours et aplats",
+      "watch_for": "Les bordures et les couleurs doivent laisser ressortir la ressource et son action principale.",
+      "application": "Un espace crème et encre, une file de tri très visible, des collections lilas et citron. Les onglets ressemblent à des intercalaires graphiques.",
+      "examples": [
+        {
+          "id": "neo-bruddle",
+          "title": "Bruddle dashboard",
+          "credit": "WhiteUI.Store",
+          "kind": "Kit UI de dashboard",
+          "note": "Navigation sombre, panneaux rectangulaires, typographie affirmée et quelques étiquettes colorées.",
+          "alt": "Bruddle dashboard. Navigation sombre, panneaux rectangulaires, typographie affirmée et quelques étiquettes colorées.",
+          "source_url": "https://dribbble.com/shots/21440274-Dashboard-inspired-by-neo-brutalism",
+          "image_url": "https://cdn.dribbble.com/userupload/6947002/file/original-372bff1f170561b6d724e9b56ac874b1.png",
+          "file": "neo-bruddle.png",
+          "width": 3200,
+          "height": 2400,
+          "sha256": "b58a137c33b2e09f0ecc5596cae7c357cb3dc11a20f35c7914313cb5b3649c7a",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "neo-serj",
+          "title": "Dashboard in Neo-Brutalism style",
+          "credit": "Serj Mikey",
+          "kind": "Concept de dashboard",
+          "note": "Cartes détourées, aplats pastel et colonne secondaire visuellement distincte.",
+          "alt": "Dashboard in Neo-Brutalism style. Cartes détourées, aplats pastel et colonne secondaire visuellement distincte.",
+          "source_url": "https://dribbble.com/shots/21285880-Dashboard-in-Neo-Brutalism-style",
+          "image_url": "https://cdn.dribbble.com/userupload/6508126/file/original-d96f0025f078f4c884cc43ce954ee336.png",
+          "file": "neo-serj.png",
+          "width": 1600,
+          "height": 1200,
+          "sha256": "11aa9e53d9d3fa3fb1913e1ec5b12bd112986d3eb0030874c9d4d341a8a09b4f",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "expressive",
+      "title": "Expressif / playful",
+      "aliases": [],
+      "summary": "Couleurs soutenues, grandes formes arrondies et rythme énergique.",
+      "tag": "Couleur et formes",
+      "watch_for": "Les grands composants prennent de la place. La bibliothèque doit conserver une vue compacte.",
+      "application": "Un accueil prune, lilas et corail ; des collections colorées ; des actions Garder / Archiver visibles. Des onglets arrondis, avec un état actif bien distinct.",
+      "examples": [
+        {
+          "id": "expressive-apps",
+          "title": "Material 3 Expressive app studies",
+          "credit": "Google Design",
+          "kind": "Concepts mobiles de design system",
+          "note": "Aplats colorés, contrastes de taille et groupes de commandes. Références mobiles à adapter au dashboard desktop.",
+          "alt": "Material 3 Expressive app studies. Aplats colorés, contrastes de taille et groupes de commandes. Références mobiles à adapter au dashboard desktop.",
+          "source_url": "https://design.google/library/expressive-material-design-google-research",
+          "image_url": "https://design.google/_next/image?q=75&url=https%3A%2F%2Fstorage.googleapis.com%2Fgd-prod%2Fimages%2F9eb4679b-45ac-4202-9749-deae98c5b904.799a99c1196c2fd4.webp&w=3840",
+          "file": "expressive-apps.webp",
+          "width": 3840,
+          "height": 1920,
+          "sha256": "1efec39922ec682ee2e06609ec39d71af986b6f4135cfffa1b458d135e2a4dd6",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "expressive-email",
+          "title": "Expressive email composition study",
+          "credit": "Google Design",
+          "kind": "Concept mobile de recherche",
+          "note": "Action principale mise en évidence. L’annotation de performance concerne l’étude Google ; elle ne prédit aucun résultat pour l’application.",
+          "alt": "Expressive email composition study. Action principale mise en évidence. L’annotation de performance concerne l’étude Google ; elle ne prédit aucun résultat pour l’application.",
+          "source_url": "https://design.google/library/expressive-material-design-google-research",
+          "image_url": "https://design.google/_next/image?q=75&url=https%3A%2F%2Fstorage.googleapis.com%2Fgd-prod%2Fimages%2Fd651bb02-a503-448d-b70e-968ecfaa266c.799a99c1196c2fd4.webp&w=3840",
+          "file": "expressive-email.webp",
+          "width": 3840,
+          "height": 4800,
+          "sha256": "80be7d789b612b3559cec172a18922f2aab2130b50addeff6fb2a82b6a00d7f4",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "liquid-glass",
+      "title": "Liquid Glass / profondeur",
+      "aliases": [],
+      "summary": "Cadre flottant, arrière-plan coloré et navigation translucide.",
+      "tag": "Transparence et couches",
+      "watch_for": "Le contraste doit rester stable sur le fond. Ces références natives demandent une adaptation au Web.",
+      "application": "Une fenêtre flottante sur fond bleu-violet, une bibliothèque visuelle et une surface de lecture opaque. Les onglets occupent une couche translucide dédiée.",
+      "examples": [
+        {
+          "id": "craft-workspace",
+          "title": "Craft workspace across devices",
+          "credit": "Craft Team",
+          "kind": "Image produit d’application native · septembre 2025",
+          "note": "Organisation de documents en tableau, navigation flottante et cadre translucide.",
+          "alt": "Craft workspace across devices. Organisation de documents en tableau, navigation flottante et cadre translucide.",
+          "source_url": "https://www.craft.do/blog/craft-update-3-2-6",
+          "image_url": "https://www.craft.do/images/content/blog/craft-update-3-2-6/image-1.jpg",
+          "file": "craft-workspace.jpg",
+          "width": 1600,
+          "height": 1086,
+          "sha256": "93411823c40e7f34f8d9f805f00e45badb975c79a8556ae4351629e1b243ff67",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "craft-tasks",
+          "title": "Craft tasks workspace",
+          "credit": "Craft Team",
+          "kind": "Image produit d’application native · septembre 2025",
+          "note": "Navigation par groupes et couches de surface ; conserver un fond stable pour le texte long.",
+          "alt": "Craft tasks workspace. Navigation par groupes et couches de surface ; conserver un fond stable pour le texte long.",
+          "source_url": "https://www.craft.do/blog/craft-update-3-2-6",
+          "image_url": "https://www.craft.do/images/content/blog/craft-update-3-2-6/image-3.png",
+          "file": "craft-tasks.png",
+          "width": 3024,
+          "height": 1964,
+          "sha256": "1d69a3253adf2295521b3d340c858c56f21bb50a0a997f5045923e5aae2d75a7",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "editorial",
+      "title": "Éditorial / magazine",
+      "aliases": [],
+      "summary": "Titres à forte présence, images, rubriques et compositions variées.",
+      "tag": "Contenu et typographie",
+      "watch_for": "Les miniatures doivent apporter du repérage. Prévoir une présentation soignée pour les ressources sans image.",
+      "application": "Une revue personnelle : une ressource principale, des sélections par sujet et une bibliothèque illustrée. Onglets sobres, titres éditoriaux et accents orange ou bordeaux.",
+      "examples": [
+        {
+          "id": "editorial-geist",
+          "title": "Geist — identité et vues de lecture",
+          "credit": "Caitlin Aboud",
+          "kind": "Étude de refonte de magazine · 2024",
+          "note": "Grandes surfaces de titre, palette vive et association photo / texte. Référence de composition éditoriale, pas de navigation d’application.",
+          "alt": "Geist — identité et vues de lecture. Grandes surfaces de titre, palette vive et association photo / texte. Référence de composition éditoriale, pas de navigation d’application.",
+          "source_url": "https://www.caitlinaboud.com/project/geist",
+          "image_url": "https://cdn.prod.website-files.com/629bd05b0b67a4db307da619/65494e5b2fe052c0d87f17fb_56897.png",
+          "file": "editorial-geist.png",
+          "width": 1843,
+          "height": 1181,
+          "sha256": "0113d244a8cb666c26c425ce819d73631f5c30b2f6721c64d8b23ce78e52e876",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "editorial-evie",
+          "title": "Evie Magazine — espace personnel",
+          "credit": "Delicious Simplicity · publié par DatoCMS",
+          "kind": "Capture de projet éditorial · 2024",
+          "note": "Titres serif, collections par sujet et favoris illustrés. Un exemple directement lié à la lecture et aux bookmarks.",
+          "alt": "Evie Magazine — espace personnel. Titres serif, collections par sujet et favoris illustrés. Un exemple directement lié à la lecture et aux bookmarks.",
+          "source_url": "https://www.datocms.com/partners/delicious-simplicity/showcase/evie-magazine",
+          "image_url": "https://www.datocms-assets.com/205/1718893335-screenshot-2024-06-20-at-10-18-35-am.png?auto=format&fit=max&w=2000",
+          "file": "editorial-evie.png",
+          "width": 2000,
+          "height": 1405,
+          "sha256": "9eb2dd1089efa9a7bc9e860516328e6f2f1b92f43b6dd31fc670f3e9ceddd3f7",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "warm-organic",
+      "title": "Organique / illustré",
+      "aliases": [],
+      "summary": "Tons crème, argile ou pastel, illustrations et courbes souples.",
+      "tag": "Chaleur et caractère",
+      "watch_for": "Les illustrations restent ponctuelles. La seconde référence, plus calme, sert surtout pour les courbes et la palette.",
+      "application": "Un bureau personnel chaleureux, des collections illustrées et des surfaces crème / terre cuite. Les onglets deviennent des intercalaires arrondis ; le contenu garde une grille régulière.",
+      "examples": [
+        {
+          "id": "warm-lumora",
+          "title": "Lumora — Wellness Dashboard",
+          "credit": "Publié par Maaz Siddiqui",
+          "kind": "Concept de dashboard",
+          "note": "Fond crème, accents argile, illustration intégrée et surfaces colorées. Reprendre le langage visuel, sans importer les widgets de santé.",
+          "alt": "Lumora — Wellness Dashboard. Fond crème, accents argile, illustration intégrée et surfaces colorées. Reprendre le langage visuel, sans importer les widgets de santé.",
+          "source_url": "https://dribbble.com/shots/26401282-Lumora-Wellness-Dashboard-UI-Design",
+          "image_url": "https://cdn.dribbble.com/userupload/44504194/file/b930f5f19b5de135d3169fad2cee3ed2.jpg?resize=752x&vertical=center",
+          "file": "warm-lumora.jpg",
+          "width": 752,
+          "height": 508,
+          "sha256": "9fcc0d28837cbf175dc8dc9dea58391ea712a9f8f8e73db70da3f6e0a7d06bc1",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "warm-zenflow",
+          "title": "ZenFlow — planning de sessions",
+          "credit": "Yara Alkadi",
+          "kind": "Concept de dashboard · septembre 2025",
+          "note": "Blocs lavande et menthe, personnages illustrés, courbes. Exemple partiel : la composition d’origine est décrite comme minimaliste par sa créatrice.",
+          "alt": "ZenFlow — planning de sessions. Blocs lavande et menthe, personnages illustrés, courbes. Exemple partiel : la composition d’origine est décrite comme minimaliste par sa créatrice.",
+          "source_url": "https://www.behance.net/gallery/232760657/ZenFlow-Yoga-Scheduling-dashboard-UI-case-study",
+          "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7bbc22232760657.68a37a948107d.png",
+          "file": "warm-zenflow.png",
+          "width": 1400,
+          "height": 1024,
+          "sha256": "badc775f985953827deb5f887a6337589ca48122a8dc8e74200802b62f2e5511",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "tactile",
+      "title": "Tactile / relief",
+      "aliases": [],
+      "summary": "Surfaces en relief, commandes enfoncées et lumière sur les bords.",
+      "tag": "Matière et volume",
+      "watch_for": "Ces anciens concepts ont des contrastes faibles. La profondeur peut inspirer xdex ; les textes et contours devront être renforcés.",
+      "application": "Une bibliothèque comme un plateau de fiches, avec des commandes qui semblent physiques. Les onglets ont un relief léger et une position active enfoncée.",
+      "examples": [
+        {
+          "id": "tactile-finance",
+          "title": "Spend.io — personal finance",
+          "credit": "Jordan Hughes",
+          "kind": "Concept historique de dashboard",
+          "note": "Ombres douces, commandes creusées et objets en volume. Référence de matière uniquement ; les contrôles pâles ne constituent pas un modèle accessible.",
+          "alt": "Spend.io — personal finance. Ombres douces, commandes creusées et objets en volume. Référence de matière uniquement ; les contrôles pâles ne constituent pas un modèle accessible.",
+          "source_url": "https://dribbble.com/shots/9044225-Skeuomorph-personal-finance-app-dashboard",
+          "image_url": "https://cdn.dribbble.com/userupload/25575642/file/original-f9ef18b778321f06ffeccb434b87bfe7.jpg",
+          "file": "tactile-finance.jpg",
+          "width": 1920,
+          "height": 1440,
+          "sha256": "f61f5a43315cef5a145517a6e80c7c05e880c9d3475c1a9f8821fb35b61212c8",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "tactile-dark",
+          "title": "Skeuomorphic UI / Interaction",
+          "credit": "Publié par Rehab Badwy",
+          "kind": "Concept de dashboard · novembre 2020",
+          "note": "Panneaux bleutés, relief des boutons et éclairage des bords. L’effet reste secondaire par rapport à la lisibilité.",
+          "alt": "Skeuomorphic UI / Interaction. Panneaux bleutés, relief des boutons et éclairage des bords. L’effet reste secondaire par rapport à la lisibilité.",
+          "source_url": "https://www.behance.net/gallery/108003477/Skeuomorphic-UIInteraction-dashboard",
+          "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a753a6108003477.5fb4210ab64ec.jpg",
+          "file": "tactile-dark.jpg",
+          "width": 1400,
+          "height": 800,
+          "sha256": "7f3219e49f1204fe0a993ea336aad08e33f9867ed3893e9521abcb39f638dc38",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "retro",
+      "title": "Rétro / pixel",
+      "aliases": [],
+      "summary": "Cadres en pixels, étiquettes monospace et références aux interfaces anciennes.",
+      "tag": "Nostalgie assumée",
+      "watch_for": "La police pixel est réservée aux titres courts. Les détails décoratifs ne doivent pas ralentir le tri.",
+      "application": "Un atelier de collections façon bureau rétro : onglets rectangulaires, couleurs de dossiers et petits détails pixel. Les résumés utilisent une police de lecture normale.",
+      "examples": [
+        {
+          "id": "retro-8bit",
+          "title": "8bitcn — composants et dashboard",
+          "credit": "orcdev / 8bitcn",
+          "kind": "Présentation de bibliothèque UI",
+          "note": "Bordures à angles en pixels, accent ambre et commandes reconnaissables.",
+          "alt": "8bitcn — composants et dashboard. Bordures à angles en pixels, accent ambre et commandes reconnaissables.",
+          "source_url": "https://peerlist.io/orcdev/project/8bitcn",
+          "image_url": "https://dqy38fnwh4fqs.cloudfront.net/UHBABPBDNNMDPJDCKDQ7NL86D9GM/projects/8bitcnf0368581-7791-49b2-a28a-1807820b253a.webp",
+          "file": "retro-8bit.webp",
+          "width": 1852,
+          "height": 1080,
+          "sha256": "6d8c34467dcd8b3a3ab0958419deae01349364a4665e3adc6709290667b3eb7d",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "retro-office",
+          "title": "Pixel Office — command center",
+          "credit": "DavidAI311",
+          "kind": "Capture d’application personnelle · 2026",
+          "note": "Zones colorées, étiquettes monospace et petits personnages pixel. Reprendre les repères de collections sans reproduire toute la scène.",
+          "alt": "Pixel Office — command center. Zones colorées, étiquettes monospace et petits personnages pixel. Reprendre les repères de collections sans reproduire toute la scène.",
+          "source_url": "https://dev.to/minatoplanb/i-got-tired-of-text-dashboards-so-i-built-a-pixel-art-command-center-1bf1",
+          "image_url": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ygb4f3vzxogqnfgdpg09.png",
+          "file": "retro-office.png",
+          "width": 3840,
+          "height": 2052,
+          "sha256": "adcdc1ce91e9e0d05b948452cd53551b30849941019e69c109d70efb530c5c49",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "title": "Technique / cockpit",
+      "aliases": [],
+      "summary": "Surface sombre, traits fins, données compactes et accents lumineux.",
+      "tag": "Instrumentation sombre",
+      "watch_for": "Ces références de science-fiction sont anciennes. Les petits textes et les effets lumineux demandent une adaptation importante.",
+      "application": "Un poste de veille : flux de sources, file de tri et coûts visibles. Onglets compacts et précis, accent cyan / ambre, métadonnées monospace et résumés lisibles.",
+      "examples": [
+        {
+          "id": "technical-orion-1",
+          "title": "ORION — vue dashboard",
+          "credit": "laaqiq · image publiée par Qubstudio",
+          "kind": "Kit UI de science-fiction · référence historique",
+          "note": "Panneaux instrumentés, fond sombre et accents cyan. Pour l’application, afficher des données utiles au tri, pas des jauges décoratives.",
+          "alt": "ORION — vue dashboard. Panneaux instrumentés, fond sombre et accents cyan. Pour l’application, afficher des données utiles au tri, pas des jauges décoratives.",
+          "source_url": "https://creativemarket.com/laaqiq/778624-ORION-%E2%80%93-Sci-Fi-Dashboard",
+          "image_url": "https://qubstudio.com/wp-content/uploads/2017/11/orion-scifi-dashboard.png",
+          "file": "technical-orion-1.png",
+          "width": 800,
+          "height": 600,
+          "sha256": "d89dd021f407d50819dbf65d573b74491ca217205dd2ce7e215062bf50b73e70",
+          "checked_at": "2026-09-09"
+        },
+        {
+          "id": "technical-orion-2",
+          "title": "ORION — vue profil et flux",
+          "credit": "laaqiq",
+          "kind": "Kit UI de science-fiction · référence historique",
+          "note": "Grille dense, métadonnées compactes et rail de navigation. Les contrastes et tailles de texte seraient augmentés.",
+          "alt": "ORION — vue profil et flux. Grille dense, métadonnées compactes et rail de navigation. Les contrastes et tailles de texte seraient augmentés.",
+          "source_url": "https://creativemarket.com/laaqiq/778624-ORION-%E2%80%93-Sci-Fi-Dashboard",
+          "image_url": "https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/1436308/910/607/m1/fpnw/wm0/6_profile-.jpg?1468033056=&s=e0ff6639c44b7736d038aa4b66f3eadc",
+          "file": "technical-orion-2.jpg",
+          "width": 910,
+          "height": 607,
+          "sha256": "ebf594f7c6839a7c941b717fb175624aa68ba47283f8b11c2316cef55f69b2ba",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "spatial",
+      "title": "Visuel / canvas",
+      "aliases": [],
+      "summary": "Cartes, images et notes regroupées sur une grande surface visuelle.",
+      "tag": "Collections dans l’espace",
+      "watch_for": "Le placement libre est une interaction supplémentaire. Une liste reste disponible pour chercher, trier et naviguer au clavier.",
+      "application": "Un tableau de collections, avec des ressources regroupées par sujet et des liens croisés. Les onglets permettent de passer du tableau à la bibliothèque et aux vues de lecture.",
+      "examples": [
+        {
+          "id": "spatial-kosmik",
+          "title": "Kosmik — tableau de ressources",
+          "credit": "Kosmik · publié par TechCrunch",
+          "kind": "Capture historique · 2023 · produit arrêté en 2026",
+          "note": "Images, liens et documents dans des groupes spatiaux. Référence historique, pas une recommandation de service actuel.",
+          "alt": "Kosmik — tableau de ressources. Images, liens et documents dans des groupes spatiaux. Référence historique, pas une recommandation de service actuel.",
+          "source_url": "https://techcrunch.com/2023/12/21/meet-kosmik-a-visual-canvas-with-an-in-built-pdf-reader-and-a-web-browser/",
+          "image_url": "https://techcrunch.com/wp-content/uploads/2023/12/Kosmik-product-hero-2-1.png?resize=823",
+          "file": "spatial-kosmik.png",
+          "width": 1691,
+          "height": 1268,
+          "sha256": "b05e6f03ca572a9759a702e725142e3c70fa4860305d126285345fbb9ed8a8fb",
+          "checked_at": "2026-09-09",
+          "project_url": "https://www.kosmik.app/"
+        },
+        {
+          "id": "spatial-integrity",
+          "title": "Integrity — canvas de projet",
+          "credit": "Integrity",
+          "kind": "Aperçu de produit en bêta",
+          "note": "Notes reliées, regroupements de cartes et barre d’outils locale. Pour l’application, les connexions représenteraient les liens entre ressources.",
+          "alt": "Integrity — canvas de projet. Notes reliées, regroupements de cartes et barre d’outils locale. Pour l’application, les connexions représenteraient les liens entre ressources.",
+          "source_url": "https://integrity.sh/",
+          "image_url": "https://integrity.sh/img/who-img-4.png",
+          "file": "spatial-integrity.png",
+          "width": 832,
+          "height": 557,
+          "sha256": "6d5e69a02ac157fc6976275406a9b34ffeeb0f7a53099715a492546f9b81be16",
+          "checked_at": "2026-09-09"
+        }
+      ]
+    }
+  ]
+}

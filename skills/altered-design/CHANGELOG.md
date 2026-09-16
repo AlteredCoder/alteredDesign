@@ -86,7 +86,7 @@ color, typography and components Defaults. No IDs removed.
 
 ### Resulting behavior
 
-- Integrate the approved xdex comparison-board format into the skill: thumbnail
+- Integrate the approved comparison-board format into the skill: thumbnail
   overview, two examples per direction, image enlargement, credits, application ideas
   and tradeoffs. Both general and app galleries use the shared renderer.
 - Add an app reference pack with nine alternatives to minimalism and eighteen
@@ -118,7 +118,7 @@ unchanged; SKILL.md setup now points to the broader board.
 - Skill Creator validator accepts a temporary copy excluding the pre-existing
   Claude-specific `argument-hint`. The shipped field is retained; strict Codex
   frontmatter validation still rejects it. This is an existing cross-host limitation.
-- Applied the updated workflow to the user's selected visual/canvas xdex prototype.
+- Applied the updated workflow to the user's selected visual/canvas prototype.
   Twenty interaction scenarios passed, including workspace tabs, triage/Undo, group
   movement, search, responsive layouts and reduced motion. This is task-specific
   evidence, not a claim of universal design quality or full accessibility conformance.

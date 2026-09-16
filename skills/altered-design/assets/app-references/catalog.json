@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "checked_at": "2026-09-09",
-  "description": "Neuf propositions visuelles pour un nouveau prototype xdex. Catalogue ouvert, non exhaustif. Les dates des images ne sont pas des dates de recommandations UX.",
-  "usage": "Images de référence uniquement ; droits conservés par leurs créateurs. Ne pas réutiliser comme assets du prototype xdex.",
+  "description": "Neuf propositions visuelles pour un prototype d’application. Catalogue ouvert, non exhaustif. Les dates des images ne sont pas des dates de recommandations UX.",
+  "usage": "Images de référence uniquement ; droits conservés par leurs créateurs. Ne pas réutiliser comme assets du prototype.",
   "directions": [
     {
       "id": "neo-brutalist",
@@ -215,7 +215,7 @@
       "aliases": [],
       "summary": "Surfaces en relief, commandes enfoncées et lumière sur les bords.",
       "tag": "Matière et volume",
-      "watch_for": "Ces anciens concepts ont des contrastes faibles. La profondeur peut inspirer xdex ; les textes et contours devront être renforcés.",
+      "watch_for": "Ces anciens concepts ont des contrastes faibles. La profondeur peut inspirer le projet ; les textes et contours devront être renforcés.",
       "application": "Une bibliothèque comme un plateau de fiches, avec des commandes qui semblent physiques. Les onglets ont un relief léger et une position active enfoncée.",
       "examples": [
         {
